@@ -1,3 +1,9 @@
+/* 
+TCP Client
+Author: Eduardo Velasco 
+May 18, 2017
+*/
+
 const net = require("net"),
 	colors = require("colors"),
 	readline = require("readline");
@@ -10,7 +16,7 @@ const tcpClient = function(port, host, user){
 	_this = this;
 }
 
-//Safely parse JSON (cannot be optimized)
+//Safely parse JSON 
 tcpClient.prototype.safelyParseJSON = function(json){
   	try {
     	const parsedJSON = JSON.parse(json);
@@ -67,7 +73,7 @@ tcpClient.prototype.displayMessage = function(message, client, request){
 			} else {
 				displayMessage = "The " + request + " is " +message['msg'][request]+".";		
 				if( request === "time" && message['msg']['random'] > 30 ){
-					displayMessage += "\nBy the way, the random number is greater than 30.";
+					displayMessage += "\nThe random number from the time request is greater than 30.";
 				}
 			}	
 		}
