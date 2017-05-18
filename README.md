@@ -9,15 +9,15 @@
   5. Detects when a message received is invalid JSON.
 
 ### The client also handles input from STDIN:
-  +Once connected to the worker process, the client supports to commands.
-  +count : How many requests have been made since the startup of the worker process.
-    +Example: { "request" : "count" }
-  +time : The current date/time and a random number
-    +Example: { "request" : "time" }
-  +An "id" property may be specified  which the worker process will use in the reply, this is an optional parameter.
-    +Example: { "request" : "count", "id" : "your_name" }
-  +The input is validated before being sent.
-  +When the random number sent back from the "time" request is greater than 30, it prints a message saying so.
+  + Once connected to the worker process, the client supports to commands.
+  + count : How many requests have been made since the startup of the worker process.
+    + Example: { "request" : "count" }
+  + time : The current date/time and a random number
+    + Example: { "request" : "time" }
+  + An "id" property may be specified  which the worker process will use in the reply, this is an optional parameter.
+    + Example: { "request" : "count", "id" : "your_name" }
+  + The input is validated before being sent.
+  + When the random number sent back from the "time" request is greater than 30, it prints a message saying so.
 
 ======================================
 
