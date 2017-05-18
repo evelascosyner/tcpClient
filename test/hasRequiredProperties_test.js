@@ -1,5 +1,5 @@
 const assert = require("chai").assert,
-	tcpClient = require(__dirname + "/../tcp_client"),
+	tcpClient = require(__dirname + "/../tcpClient"),
 	client = new tcpClient();
 
 describe("hasRequiredProperties()", () => {
