@@ -71,7 +71,7 @@ describe("openConnection()", () => {
                 "Welcome ~~ Eduardo!", 
                 "The count is 10.",
                 "The time is Thu May 18 01:19:18 2017.",
-                "The time is Thu May 18 01:19:18 2017.\nThe random number from the time request is greater than 30", 
+                "The time is Thu May 18 01:19:18 2017.\nThe random number from the time request is greater than 30.", 
                 "Response is not to a request from this client.", 
             ];
             const sampleMessages = [
