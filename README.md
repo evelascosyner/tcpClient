@@ -1,14 +1,15 @@
 
 ## This is a simple TCP client that operates from the command line.
 
-### The Client:
+### The client:
   1. Connects to a server at a specified port/ip.
   2. Receives line delimited JSON.
   3. "Logs in" with the key/value pair {"name":"your_name"}.
   4. Listens for heartbeat messages. If no data is received in over 2 seconds, the client reconnects and logs in once more.
   5. Detects when a message received is invalid JSON.
 
-### The Client also handles input from STDIN to send two supported commands once connected to the worker process:
+### The client also handles input from STDIN:
+  -Once connected to the worker process, the client supports to commands.
   -count : How many requests have been made since the startup of the worker process.
     Example: { "request" : "count" }
   -time : The current date/time and a random number
