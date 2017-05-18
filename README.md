@@ -20,5 +20,5 @@
   + When the random number sent back from the "time" request is greater than 30, it prints a message saying so.
 
 ### Line breaks in JSON
-In order to support including line breaks within the JSON, the \n character could be replaced by \\n. Additionally, there are JSON 
+In order to support including line breaks within the JSON, the \n character could be replaced by \\\n. Additionally, there are JSON 
 specific duplex stream packages that could be used for this purpose.
